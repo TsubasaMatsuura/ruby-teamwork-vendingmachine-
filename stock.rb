@@ -1,7 +1,7 @@
 require "./drink"
 
 class Stock
-  attr_accessor :drink
+  attr_reader :drink
 
   def initialize
     @drink = []
