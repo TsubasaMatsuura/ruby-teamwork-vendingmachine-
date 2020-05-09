@@ -8,7 +8,7 @@ while true
   puts "2. 飲み物を買う"
   puts "3. 投入金額を確認する"
   puts "4. 売上金額を確認する"
-  puts "5. 取り消し"
+  puts "5. 操作を止める"
 
   input = function.input
 
