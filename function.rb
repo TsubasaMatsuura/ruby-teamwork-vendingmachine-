@@ -1,7 +1,7 @@
 require "./vending_machine"
 
 class Function
-  attr_accessor :vending_machine
+  attr_reader :vending_machine
 
   def initialize
     @vending_machine = VendingMachine.new
@@ -30,7 +30,6 @@ class Function
       puts "買えるものはありません"
     end
 
-    #list.any?
   end
 
   def purchase(id)
