@@ -35,6 +35,6 @@ class VendingMachine
   end
 
   def purchasable_list
-    @stock.uniq_list.select { |drink| drink[:price] < @total }
+    @stock.uniq_list.select { |drink| drink[:price] <= @total }
   end
 end
