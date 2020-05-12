@@ -30,7 +30,7 @@ class Function
 
   end
 
-  def purchase(id)
+  def buy(id)
     drink = @vending_machine.purchase(id)
     puts "#{drink[:name]}を買いました" 
   end

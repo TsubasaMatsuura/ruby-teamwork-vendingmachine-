@@ -31,8 +31,6 @@ class VendingMachine
       @total -= @stock.drink[index][:price]
       @sale_proceeds += @stock.drink[index][:price]
       @stock.drink.delete_at(index)
-    else
-      puts "商品がありません"
     end
   end
 

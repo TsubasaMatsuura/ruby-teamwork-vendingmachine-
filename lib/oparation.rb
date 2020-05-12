@@ -16,7 +16,7 @@ while true
   when 1
     function.insert
   when 2
-    function.purchase(function.input) if function.drink_list
+    function.buy(function.input) if function.drink_list
   when 3
     function.total
   when 4
