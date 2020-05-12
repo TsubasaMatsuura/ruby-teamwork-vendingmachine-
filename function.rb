@@ -23,7 +23,7 @@ class Function
     list = @vending_machine.purchasable_list
 
     if list.any?
-      list.map { |drink| puts "#{drink[:id]}: #{drink[:name]}" }
+      list.map { |drink| puts "#{drink[:id]}: #{drink[:name]}: #{drink[:price]}" }
     else
       puts "買えるものはありません"
     end
