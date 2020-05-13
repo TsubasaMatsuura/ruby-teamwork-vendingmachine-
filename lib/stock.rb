@@ -1,4 +1,4 @@
-require "./drink"
+require "../lib/drink"
 
 class Stock
   attr_reader :drink

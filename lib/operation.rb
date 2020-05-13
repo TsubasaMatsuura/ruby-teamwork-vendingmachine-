@@ -1,4 +1,4 @@
-require "./function"
+require "../lib/function"
 
 function = Function.new
 

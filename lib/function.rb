@@ -1,4 +1,5 @@
-require "./vending_machine"
+require "../lib/vending_machine"
+require "pry"
 
 class Function
   attr_reader :vending_machine
@@ -31,8 +32,12 @@ class Function
   end
 
   def buy(id)
+    if id == 0 || id >3
+      puts "買える商品がありません"
+    else
     drink = @vending_machine.purchase(id)
     puts "#{drink[:name]}を買いました" 
+    end
   end
 
   def total
